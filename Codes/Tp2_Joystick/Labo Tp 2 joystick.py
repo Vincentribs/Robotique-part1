@@ -19,6 +19,7 @@ while True:
     val_y = adc1.read_u16() #lecture valeur y
     print(val_x)
     print(val_y)
+    pwm.duty_u16(val_y)
     time.sleep_ms(1000)
     
     
